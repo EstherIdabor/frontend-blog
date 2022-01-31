@@ -1,0 +1,249 @@
+:root{
+   --Very-light-red: hsl(13, 100%, 72%);
+   --Light-red: hsl(353, 100%, 62%);
+   --Very-dark-gray-blue: hsl(237, 17%, 21%);
+  --Very-dark-desaturated-blue: hsl(237, 23%, 32%);
+}
+*{
+    margin: 0;
+}
+body{
+    font-family: 'Ubuntu', sans-serif;
+    overflow-x: hidden;
+}
+
+.header{
+    background-image: url("images/bg-pattern-intro-desktop.svg"), linear-gradient(90deg, var(--Very-light-red), var(--Light-red));
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 34% 53%;
+    color: white;
+    padding: 1em;
+    height: 50vh;
+    width: 100%;
+    border-radius: 0 0 0 40px;
+    position: relative;
+}
+.top-sec{
+    width: 90%;
+    margin: 0 auto 0;
+}
+ul{
+    list-style: none;
+}
+.menu-btn{
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    z-index: 2;
+    color: black;
+    background-color: black;
+    
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    margin-top: 0px;
+}
+nav img{
+    width: 100px;
+    height: 40px;
+    margin-top: 0;
+}
+
+nav ul li{
+    margin-right: 25px;
+    
+}
+.main-menu{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    margin-top: 1em;
+}
+.right-menu{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1em;
+}
+.publish{
+    text-align: center;
+}
+.publish h1{
+    margin-top: 3em;
+    margin-bottom: 0.6em;
+}
+.publish p{
+    margin-bottom: 2em;
+    font-weight: 200;
+}
+.sign-up{
+    border: 1px solid white;
+    border-radius: 25px;
+    padding: 0.5em 1em;
+    margin-right: 5px;
+    background-color: white;
+    text-decoration: none;
+    color: var(--Light-red);
+}
+.publish a:first-of-type{
+    border: 1px solid white;
+    border-radius: 25px;
+    padding: 0.5em 1em;
+    margin-right: 5px;
+    background-color: white;
+    text-decoration: none;
+    color: var(--Light-red);
+}
+.publish a:last-of-type{
+    border: 1px solid white;
+    border-radius: 25px;
+    padding: 0.5em 1em;
+    color: white;
+    text-decoration: none;
+}
+
+.design{
+    color: var(--Very-dark-gray-blue);
+    display: flex;
+    flex-direction: row;
+    padding-left: 30px;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+.design h2{
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 1.5em;
+}
+.img-design{
+    position: relative;
+    right: -180px;
+    width: 500px;
+    height: auto;
+    margin: 1.5em;
+    
+}
+.design-text{
+    margin: 3em;
+}
+.text{
+    padding: 20px;
+}
+.infrastructure{
+    color: white;
+    background-color: var(--Very-dark-gray-blue);
+    background-image: url("images/bg-pattern-circles.svg");
+    background-repeat: no-repeat;
+    background-position: -300px -600px;
+    padding: 1.5rem;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+    position: relative;
+    border-radius: 0 50px 0 0;
+}
+.infrastructre-text{
+    width: 50%;
+    margin: 2em;
+}
+.img-infrastructure{
+    position: relative;
+    top: 0;
+    left: 10px;
+    height: 65vh;
+}
+
+.free{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.img-free{
+   position: relative;
+   left: -180px;
+   width: 600px;
+   height: auto;
+   margin: 1.5em;
+}
+.free-text{
+    margin: 2em;
+}
+.Links{
+    background-color: var(--Very-dark-gray-blue);
+    color: white;
+    padding: 2em;
+    border-radius: 0 50px 0 0;
+}
+.link-inner{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+     grid-gap: 5px;
+    align-items: flex-start;
+    justify-content: center;
+}
+.link-inner ul li{
+    font-weight: 200;
+}
+.link-inner ul li h3{
+     margin-bottom: 1em;
+}
+
+@media(max-width: 500px){
+    body{
+        overflow-x: hidden;
+    }
+    nav .main-menu{
+        display: none;
+    }
+    nav .right-menu{
+        display: none;
+    }
+    .design{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-bottom: 5em;
+    }
+    .design-text{
+        margin-bottom: 10em;
+    }
+    .img-design{
+        all: unset;
+        width: 300px;
+        margin-top: 1.5em;
+    }
+    .infrastructure{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        height: 60vh;
+        color: black;
+    }
+    .img-infrastructure{
+        all: unset;
+        position: relative;
+        top: -120px;
+        left: 10px;
+        height: 65vh;
+    }
+    .infrastructre-text{
+        width: 95%;
+        margin-top: 0;
+    }
+    .free{
+        display: flex;
+        flex-direction: column;
+    }
+    .img-free{
+       all: unset;
+       width: 400px;
+       margin-top: 1.5em;
+    }
+}
